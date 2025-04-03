@@ -4,6 +4,5 @@ exports.handler = async (event) => {
   for (const record of event.Records) {
     console.log("Message Body:", record.body);
   }
-
   return { statusCode: 200, body: "Processed SQS Messages" };
 };
